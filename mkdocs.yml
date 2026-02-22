@@ -1,0 +1,89 @@
+site_name: "TrueDark Rising — Lore Wiki"
+site_description: "Foundational history, entities, and world reference for TrueDark Rising"
+site_url: "https://raymondbeckham.github.io/TrueDark-Site/"
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: Crimson Pro
+    code: Fira Code
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  icon:
+    logo: material/fire
+
+extra_css:
+  - stylesheets/custom.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Core Definitions:
+    - lore/core-definitions.md
+  - History:
+    - lore/creation.md
+    - lore/lightmere.md
+    - lore/insurrection.md
+    - lore/the-fall.md
+    - lore/the-scorching.md
+    - lore/deepmere.md
+    - lore/walked-nights.md
+    - lore/the-crossing.md
+    - lore/the-interval.md
+    - lore/age-of-oslog.md
+    - lore/night-sun-event.md
+  - Beings:
+    - beings/eyru.md
+    - beings/highborn.md
+    - beings/nova.md
+    - beings/the-elect.md
+    - beings/umbra.md
+    - beings/the-archfiend.md
+    - beings/the-shades.md
+    - beings/the-pursuer.md
+    - beings/the-keepers.md
+    - beings/oslog.md
+    - beings/kinsfolk.md
+    - beings/the-sparkless.md
+  - Places:
+    - places/calmere.md
+    - places/lightmere.md
+    - places/deepmere.md
+    - places/farshadow.md
+    - places/the-crossing.md
+  - Concepts & Forces:
+    - systems/truelight.md
+    - systems/truedark.md
+    - systems/umbral-essence.md
+    - systems/darklife.md
+    - systems/beastlings.md
+    - systems/worldlines.md
+    - systems/the-sun.md
+  - Society:
+    - systems/orders.md
+    - systems/sparks.md
+    - systems/temple-of-knowledge.md
+    - systems/record-and-memory.md
+  - Events:
+    - events/the-fall.md
+    - events/the-scorching.md
+    - events/the-interval.md
+    - events/night-sun-event.md
