@@ -8,7 +8,7 @@ theme:
     scheme: slate
     primary: custom
     accent: custom
-  font:
+  font: false
     text: Crimson Pro
     code: Fira Code
   features:
