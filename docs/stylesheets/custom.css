@@ -3,199 +3,202 @@
    Gold & dark palette matching the canon docs
    ═══════════════════════════════════════════ */
 
-:root {
-  --gold: #D4944A;
-  --gold-bright: #F0B060;
-  --gold-dim: #9B6A30;
-  --danger: #A63D3D;
-  --cool: #3D7A8A;
-  --text-muted: #8B7F6F;
-}
+   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
 
-/* Override Material theme colors */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #D4944A;
-  --md-accent-fg-color: #F0B060;
-  --md-default-bg-color: #1A1714;
-  --md-default-fg-color--light: #B0A898;
-}
-
-/* Header bar */
-.md-header {
-  background-color: #12100D !important;
-  border-bottom: 2px solid var(--gold-dim);
-}
-
-/* Navigation sidebar */
-.md-sidebar {
-  background-color: #1E1B17;
-}
-
-.md-nav__link {
-  color: #B0A898 !important;
-}
-
-.md-nav__link--active,
-.md-nav__link:hover {
-  color: var(--gold-bright) !important;
-}
-
-/* Content area */
-.md-content {
-  font-family: 'Crimson Pro', Georgia, serif;
-}
-
-.md-typeset h1 {
-  color: var(--gold) !important;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-weight: 700;
-  border-bottom: 2px solid var(--gold-dim);
-  padding-bottom: 0.4em;
-}
-
-.md-typeset h2 {
-  color: var(--gold) !important;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-weight: 600;
-}
-
-.md-typeset h3 {
-  color: var(--gold-bright) !important;
-  font-family: 'Crimson Pro', Georgia, serif;
-}
-
-/* Bold terms — gold tint */
-.md-typeset strong {
-  color: #C8A872;
-}
-
-/* Admonition customizations */
-.md-typeset .admonition.lore,
-.md-typeset details.lore {
-  border-color: var(--gold);
-}
-.md-typeset .lore > .admonition-title,
-.md-typeset .lore > summary {
-  background-color: rgba(212, 148, 74, 0.1);
-  border-color: var(--gold);
-}
-.md-typeset .lore > .admonition-title::before,
-.md-typeset .lore > summary::before {
-  background-color: var(--gold);
-}
-
-.md-typeset .admonition.danger,
-.md-typeset details.danger {
-  border-color: var(--danger);
-}
-
-.md-typeset .admonition.keeper,
-.md-typeset details.keeper {
-  border-color: var(--cool);
-}
-.md-typeset .keeper > .admonition-title,
-.md-typeset .keeper > summary {
-  background-color: rgba(61, 122, 138, 0.1);
-}
-
-/* Entity type badges */
-.entity-badge {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 3px;
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-}
-
-.entity-badge--light {
-  background: rgba(212, 148, 74, 0.15);
-  color: var(--gold);
-  border: 1px solid var(--gold-dim);
-}
-
-.entity-badge--dark {
-  background: rgba(166, 61, 61, 0.15);
-  color: var(--danger);
-  border: 1px solid var(--danger);
-}
-
-.entity-badge--keeper {
-  background: rgba(61, 122, 138, 0.15);
-  color: var(--cool);
-  border: 1px solid var(--cool);
-}
-
-.entity-badge--place {
-  background: rgba(107, 95, 80, 0.2);
-  color: var(--text-muted);
-  border: 1px solid var(--text-muted);
-}
-
-/* Keeper cards */
-.keeper-card {
-  border-left: 4px solid var(--cool);
-  background: rgba(61, 122, 138, 0.06);
-  padding: 1em 1.2em;
-  margin: 1em 0;
-  border-radius: 0 4px 4px 0;
-}
-
-.keeper-card h4 {
-  color: var(--cool) !important;
-  margin-top: 0;
-}
-
-.keeper-card .cost {
-  color: var(--danger);
-  font-style: italic;
-}
-
-/* Tables */
-.md-typeset table:not([class]) {
-  border: 1px solid var(--gold-dim);
-}
-
-.md-typeset table:not([class]) th {
-  background-color: rgba(212, 148, 74, 0.12);
-  color: var(--gold);
-  border-bottom: 2px solid var(--gold-dim);
-}
-
-.md-typeset table:not([class]) td {
-  border-color: rgba(212, 148, 74, 0.2);
-}
-
-/* Search */
-.md-search__input {
-  background-color: #242019 !important;
-}
-
-/* Footer */
-.md-footer {
-  background-color: #12100D;
-  border-top: 1px solid var(--gold-dim);
-}
-
-/* Divider styling */
-.lore-divider {
-  text-align: center;
-  color: var(--gold-dim);
-  letter-spacing: 0.3em;
-  margin: 2em 0;
-}
-
-/* Canon callout */
-.canon-note {
-  border: 1px solid var(--danger);
-  background: rgba(166, 61, 61, 0.06);
-  padding: 0.8em 1em;
-  border-radius: 4px;
-  margin: 1em 0;
-}
-
-.canon-note strong:first-child {
-  color: var(--danger);
-}
+   :root {
+     --gold: #D4944A;
+     --gold-bright: #F0B060;
+     --gold-dim: #9B6A30;
+     --danger: #A63D3D;
+     --cool: #3D7A8A;
+     --text-muted: #8B7F6F;
+   }
+   
+   /* Override Material theme colors */
+   [data-md-color-scheme="slate"] {
+     --md-primary-fg-color: #D4944A;
+     --md-accent-fg-color: #F0B060;
+     --md-default-bg-color: #1A1714;
+     --md-default-fg-color--light: #B0A898;
+   }
+   
+   /* Header bar */
+   .md-header {
+     background-color: #12100D !important;
+     border-bottom: 2px solid var(--gold-dim);
+   }
+   
+   /* Navigation sidebar */
+   .md-sidebar {
+     background-color: #1E1B17;
+   }
+   
+   .md-nav__link {
+     color: #B0A898 !important;
+   }
+   
+   .md-nav__link--active,
+   .md-nav__link:hover {
+     color: var(--gold-bright) !important;
+   }
+   
+   /* Content area */
+   .md-content {
+     font-family: 'Crimson Pro', Georgia, serif;
+   }
+   
+   /* Headings — Cinzel for old-world title feel */
+   .md-typeset h1 {
+     color: var(--gold) !important;
+     font-family: 'Cinzel', serif !important;
+     font-weight: 700;
+     border-bottom: 2px solid var(--gold-dim);
+     padding-bottom: 0.4em;
+   }
+   
+   .md-typeset h2 {
+     color: var(--gold) !important;
+     font-family: 'Cinzel', serif !important;
+     font-weight: 600;
+   }
+   
+   .md-typeset h3 {
+     color: var(--gold-bright) !important;
+     font-family: 'Cinzel', serif !important;
+   }
+   
+   /* Bold terms — gold tint */
+   .md-typeset strong {
+     color: #C8A872;
+   }
+   
+   /* Admonition customizations */
+   .md-typeset .admonition.lore,
+   .md-typeset details.lore {
+     border-color: var(--gold);
+   }
+   .md-typeset .lore > .admonition-title,
+   .md-typeset .lore > summary {
+     background-color: rgba(212, 148, 74, 0.1);
+     border-color: var(--gold);
+   }
+   .md-typeset .lore > .admonition-title::before,
+   .md-typeset .lore > summary::before {
+     background-color: var(--gold);
+   }
+   
+   .md-typeset .admonition.danger,
+   .md-typeset details.danger {
+     border-color: var(--danger);
+   }
+   
+   .md-typeset .admonition.keeper,
+   .md-typeset details.keeper {
+     border-color: var(--cool);
+   }
+   .md-typeset .keeper > .admonition-title,
+   .md-typeset .keeper > summary {
+     background-color: rgba(61, 122, 138, 0.1);
+   }
+   
+   /* Entity type badges */
+   .entity-badge {
+     display: inline-block;
+     padding: 2px 10px;
+     border-radius: 3px;
+     font-size: 0.75em;
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     margin-bottom: 0.5em;
+   }
+   
+   .entity-badge--light {
+     background: rgba(212, 148, 74, 0.15);
+     color: var(--gold);
+     border: 1px solid var(--gold-dim);
+   }
+   
+   .entity-badge--dark {
+     background: rgba(166, 61, 61, 0.15);
+     color: var(--danger);
+     border: 1px solid var(--danger);
+   }
+   
+   .entity-badge--keeper {
+     background: rgba(61, 122, 138, 0.15);
+     color: var(--cool);
+     border: 1px solid var(--cool);
+   }
+   
+   .entity-badge--place {
+     background: rgba(107, 95, 80, 0.2);
+     color: var(--text-muted);
+     border: 1px solid var(--text-muted);
+   }
+   
+   /* Keeper cards */
+   .keeper-card {
+     border-left: 4px solid var(--cool);
+     background: rgba(61, 122, 138, 0.06);
+     padding: 1em 1.2em;
+     margin: 1em 0;
+     border-radius: 0 4px 4px 0;
+   }
+   
+   .keeper-card h4 {
+     color: var(--cool) !important;
+     margin-top: 0;
+   }
+   
+   .keeper-card .cost {
+     color: var(--danger);
+     font-style: italic;
+   }
+   
+   /* Tables */
+   .md-typeset table:not([class]) {
+     border: 1px solid var(--gold-dim);
+   }
+   
+   .md-typeset table:not([class]) th {
+     background-color: rgba(212, 148, 74, 0.12);
+     color: var(--gold);
+     border-bottom: 2px solid var(--gold-dim);
+   }
+   
+   .md-typeset table:not([class]) td {
+     border-color: rgba(212, 148, 74, 0.2);
+   }
+   
+   /* Search */
+   .md-search__input {
+     background-color: #242019 !important;
+   }
+   
+   /* Footer */
+   .md-footer {
+     background-color: #12100D;
+     border-top: 1px solid var(--gold-dim);
+   }
+   
+   /* Divider styling */
+   .lore-divider {
+     text-align: center;
+     color: var(--gold-dim);
+     letter-spacing: 0.3em;
+     margin: 2em 0;
+   }
+   
+   /* Canon callout */
+   .canon-note {
+     border: 1px solid var(--danger);
+     background: rgba(166, 61, 61, 0.06);
+     padding: 0.8em 1em;
+     border-radius: 4px;
+     margin: 1em 0;
+   }
+   
+   .canon-note strong:first-child {
+     color: var(--danger);
+   }

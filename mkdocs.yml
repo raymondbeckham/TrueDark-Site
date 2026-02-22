@@ -8,9 +8,9 @@ theme:
     scheme: slate
     primary: custom
     accent: custom
-  font: false
+  font:
     text: Crimson Pro
-    code: Fira Code
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.sections
