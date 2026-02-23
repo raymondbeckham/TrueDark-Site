@@ -24,9 +24,13 @@
    
    /* Header bar */
    .md-header {
-     background-color: #12100D !important;
-     border-bottom: 2px solid var(--gold-dim);
-   }
+    background-color: #12100D !important;
+    border-bottom: 2px solid var(--gold-dim);
+  }
+
+  .md-header__title {
+    font-family: 'Cinzel', serif !important;
+  }
    
    /* Navigation sidebar */
    .md-sidebar {
@@ -158,18 +162,23 @@
    
    /* Tables */
    .md-typeset table:not([class]) {
-     border: 1px solid var(--gold-dim);
-   }
-   
-   .md-typeset table:not([class]) th {
-     background-color: rgba(212, 148, 74, 0.12);
-     color: var(--gold);
-     border-bottom: 2px solid var(--gold-dim);
-   }
-   
-   .md-typeset table:not([class]) td {
-     border-color: rgba(212, 148, 74, 0.2);
-   }
+    border: 1px solid var(--gold-dim);
+  }
+  
+  .md-typeset table:not([class]) th {
+    background-color: rgba(212, 148, 74, 0.12);
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold-dim);
+  }
+  
+  .md-typeset table:not([class]) td {
+    border-color: rgba(212, 148, 74, 0.2);
+  }
+
+  .md-typeset table:not([class]) td,
+  .md-typeset table:not([class]) th {
+    font-size: 0.rem;
+  }
    
    /* Search */
    .md-search__input {
